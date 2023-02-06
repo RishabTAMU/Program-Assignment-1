@@ -40,6 +40,25 @@ end
 
 def sum_to_n?(arr, number)
   # YOUR CODE HERE
+  
+  #checks if array is empty, if so return false
+  if arr.empty?
+    return false
+  end
+  
+  #checks if array only has one elemnent, if so return false
+  if arr.length == 1
+    return false
+  end
+  
+  #uses a special function mentioned in Ruby
+  #It will take two array elements and create array combination
+  #then detect whether 2 (x and y) elements added = number 
+  if arr.uniq.combination(2).detect {|x, y| x + y == number}
+    return true
+  else
+    return false
+  end
 end
 
 # Part 2
