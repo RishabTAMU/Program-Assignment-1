@@ -69,7 +69,7 @@ def hello(name)
 end
 
 def starts_with_consonant?(string)
-  # YOUR CODE HERE
+  # YOUR CODE HER
   if string =~ /\A[aeiou]/i
     return false
   elsif string =~ /[bcdghjklmnpqrstvwxyz]/i
