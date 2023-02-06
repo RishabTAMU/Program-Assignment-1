@@ -65,10 +65,18 @@ end
 
 def hello(name)
   # YOUR CODE HERE
+  return "Hello, #{name}"
 end
 
 def starts_with_consonant?(string)
   # YOUR CODE HERE
+  if string =~ /\A[aeiou]/i
+    return false
+  elsif string =~ /[bcdghjklmnpqrstvwxyz]/i
+    return true
+  else 
+    return false
+  end
 end
 
 def binary_multiple_of_4?(string)
