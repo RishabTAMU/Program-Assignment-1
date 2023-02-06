@@ -6,13 +6,17 @@ def sum(arr)
   # YOUR CODE HERE
   total = 0
   
+  #checks if array length is 0, if so return 0
   if arr.length == 0
     return 0
   end
   
+  #for loop starting from 0 to end of array
   for x in 0...arr.length
+    #adds all the element value in the array
     total += arr[x]
   end
+  #returns total sum
   return total
 end
 
