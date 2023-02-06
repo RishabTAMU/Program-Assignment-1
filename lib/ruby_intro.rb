@@ -4,7 +4,16 @@
 
 def sum(arr)
   # YOUR CODE HERE
-  #Testing
+  total = 0
+  
+  if arr.length == 0
+    return 0
+  end
+  
+  for x in 0...arr.length
+    total += arr[x]
+  end
+  return total
 end
 
 def max_2_sum(arr)
