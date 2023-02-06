@@ -22,6 +22,20 @@ end
 
 def max_2_sum(arr)
   # YOUR CODE HERE
+  #checks if array is empty, if so return 0
+  if arr.empty?
+      return 0
+  end
+         
+  #checks if there is 1 element in array, if so return that element
+  if arr.length == 1
+    return arr[0]
+  end        
+  
+  #Sorts the array from descending order (Ex: 5,4,3,2,1)
+  sorted_arr = arr.sort.reverse
+  #returns the sum of the elements in the first two spots in the array
+  return sorted_arr[0] + sorted_arr[1]
 end
 
 def sum_to_n?(arr, number)
