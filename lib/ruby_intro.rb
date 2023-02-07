@@ -107,4 +107,45 @@ end
 # Object representing a book
 class BookInStock
   # YOUR CODE HERE
+  
+  def initialize(isbn, price)
+    #raises error is size is 0 or price is  or less than 0
+    if isbn.size == 0
+      raise ArgumentError
+    end
+    
+    if price <= 0
+      raise ArgumentError
+    end
+    @isbn = isbn
+    @price = price
+  end
+
+  #source which helped: https://www.geeksforgeeks.org/ruby-getters-and-setters-method/
+  #Get Method for isbn
+  def isbn
+    @isbn
+  end
+  
+  #set method for isbn
+  def isbn=(isbn)
+    @isbn = isbn
+  end
+  
+  #get method for price
+  def price
+    @price
+  end
+  
+  #set method for price
+  def price=(price)
+    @price = price
+  end
+  
+  #price format is in USD
+  def price_as_string
+    #adds $ sign and adds two decimal values
+    format("$%.2f", @price)
+  end
+  
 end
