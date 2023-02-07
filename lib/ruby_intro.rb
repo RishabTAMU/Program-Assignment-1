@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Part 1
-#Rishab Nair
+#Rishab Nair HW 1
 def sum(arr)
   # YOUR CODE HERE
   total = 0
