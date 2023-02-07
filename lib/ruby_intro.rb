@@ -69,7 +69,7 @@ def hello(name)
 end
 
 def starts_with_consonant?(string)
-  # YOUR CODE HER
+  # YOUR CODE HERE
   if string =~ /\A[aeiou]/i
     return false
   elsif string =~ /[bcdghjklmnpqrstvwxyz]/i
@@ -81,6 +81,25 @@ end
 
 def binary_multiple_of_4?(string)
   # YOUR CODE HERE
+  
+  string_int = string.to_i
+  
+  if string.length == 0
+    return false
+  end
+  
+  if string_int % 4 == 0 
+    for x in 0...string.length
+      if string[x] != "1" and string[x] != "0"
+        return false
+      else
+        return true
+      end
+    end
+  else
+    return false
+  end
+  
 end
 
 # Part 3
