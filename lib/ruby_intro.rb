@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Part 1
-
+#Rishab Nair
 def sum(arr)
   # YOUR CODE HERE
   total = 0
