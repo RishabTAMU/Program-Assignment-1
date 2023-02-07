@@ -2,6 +2,7 @@
 
 # Part 1
 #Rishab Nair HW 1
+
 def sum(arr)
   # YOUR CODE HERE
   total = 0
